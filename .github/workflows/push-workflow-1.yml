@@ -32,7 +32,7 @@ jobs:
       - run: cd backend && npm run test
 
       # Run the linter.
-      - run: npm init @eslint/config
+      - run: cd backend && npm init @eslint/config
       - run: cd backend && npm run lint
 
       # Send a console message at completion.
